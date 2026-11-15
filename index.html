@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICLEOD | Хувцасны Онлайн Дэлгүүр</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #161616;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --accent: #ffffff;
+            --border: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #141414, #0a0a0a);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            background-color: #222;
+            display: block;
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 16px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .contact-links a {
+            display: block;
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-messenger { background-color: #0084FF; }
+        .btn-phone { background-color: #28a745; margin-bottom: 0; }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">NICLEOD</a>
+    </header>
+
+    <section class="hero">
+        <h1>NICLEOD STORE</h1>
+        <p>Шинэ загварын, чанартай хувцасны онлайн дэлгүүр. Захиалгаа шууд чатаар болон утсаар өгөөрэй.</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Шинэ загварууд</h2>
+        
+        <div class="product-grid">
+            
+            <!-- 1-р бараа -->
+            <div class="product-card">
+                <img src="IMG_0109.jpeg" alt="American Gothic Hoodie" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">2026 American Gothic Style Leopard Print Rolling Stone Print Hooded Cardigan Sweatshirt</h3>
+                    <div>
+                        <p class="product-price">50,000₮</p>
+                        <div class="contact-links">
+                            <a href="https://ig.me" target="_blank" class="btn-instagram">Instagram-аар захиалах</a>
+                            <a href="https://m.me" target="_blank" class="btn-messenger">Messenger-ээр захиалах</a>
+                            <a href="tel:+97695823234" class="btn-phone">Утсаар залгах (9582-3234)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-р бараа -->
+            <div class="product-card">
+                <img src="IMG_0303.jpeg" alt="Newvalley Hoodie" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Newvalley Sport Dept Streetwear Vintage Washed Hoodie Y2K</h3>
+                    <div>
+                        <p class="product-price">50,000₮</p>
+                        <div class="contact-links">
+                            <a href="https://ig.me" target="_blank" class="btn-instagram">Instagram-аар захиалах</a>
+                            <a href="https://m.me" target="_blank" class="btn-messenger">Messenger-ээр захиалах</a>
+                            <a href="tel:+97695823234" class="btn-phone">Утсаар залгах (9582-3234)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NICLEOD. Бүх эрх хуулиар хамгаалагдсан.</p>
+        <p style="margin-top: 8px;">Холбоо барих: 9582-3234 | Instagram: @sazume31</p>
+    </footer>
+
+</body>
+</html>
